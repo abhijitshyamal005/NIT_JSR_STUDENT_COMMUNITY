@@ -1,5 +1,6 @@
-import  { useState } from 'react';
+import { useState } from 'react';
 import logo from '../assets/nit-jamshedpur.png';
+import Scholar from '../assets/Scholarship.png';
 
 function Navbar() {
   const [Drop, setDrop] = useState(false);
@@ -15,7 +16,7 @@ function Navbar() {
       <div className="w-full max-w-screen-xl flex items-center justify-between p-6">
         <img alt="logo" src={logo} className="h-12" />
 
-        <div className="hidden md:flex flex-1 justify-between">
+        <div className="hidden md:flex flex-1 justify-between ">
           <nav className="flex items-center space-x-8 ml-5 text-black font-semibold font-sans ">
             <a href="https://official-website.com" className="text-black hover:text-[#d15213]">
               NIT JSR Official Website
@@ -30,7 +31,7 @@ function Navbar() {
               onClick={() => setDrop(!Drop)}
               className="relative flex items-center cursor-pointer"
             >
-              <span className="text-black hover:text-[#d15213]">Contact Us</span>
+              <span className="text-black hover:text-[#d15213]">Others</span>
               <div className="ml-2">
                 {Drop ? (
                   <svg viewBox="0 0 1024 1024" className="w-6 h-6 transform rotate-180">
@@ -55,8 +56,8 @@ function Navbar() {
           </div>
         </div>
 
-          {/* Mobile Menu Button */}
-          <div className="flex md:hidden">
+        {/* Mobile Menu Button */}
+        <div className="flex md:hidden">
           <div className="flex mr-3 space-x-2 text-[15px] font-semibold  justify-center">
             <button className="bg-[#d15213] text-white p-2 border rounded-3xl border-[#d15213] hover:bg-black">
               Get Started
@@ -71,23 +72,23 @@ function Navbar() {
             </svg>
           </button>
         </div>
-          {/* Mobile Menu */}
-          {mobileMenuVisible && (
+        {/* Mobile Menu */}
+        {mobileMenuVisible && (
           <nav className="md:hidden bg-white absolute top-full left-0 w-full py-4">
-            <ul className="flex flex-col space-y-4 px-6">
-              <li>
-                <a href="https://official-website.com" className="text-black hover:text-[#d15213]">
-                  Official Website
+            <ul className="flex flex-col space-y-4 px-6 font-semibold hover:text-[#d15213]">
+              <li className="text-black hover:text-[#d15213]">
+                <a href="https://official-website.com" >
+                  NIT JSR Official Website
                 </a>
               </li>
               <li>
-                <a href="https://report-lost-items.com" className="text-black hover:text-[#d15213]">
-                  Report Lost Items
+                <a href="https://report-lost-items.com">
+                  Report A Complain
                 </a>
               </li>
               <li>
-                <a href="https://find-items.com" target="_blank" rel="noreferrer noopener" className="text-black hover:text-[#d15213]">
-                  Find Items
+                <a href="https://find-items.com" target="_blank" rel="noreferrer noopener">
+                  Couse Notes
                 </a>
               </li>
               <li>
@@ -95,7 +96,7 @@ function Navbar() {
                   onClick={() => setMobileMenuVisible(!mobileMenuVisible)}
                   className="relative flex items-center cursor-pointer"
                 >
-                  <span className="text-black hover:text-[#d15213]">Contact Us</span>
+                  <span className="text-black hover:text-[#d15213]">Others</span>
                   <div className="ml-2">
                     {mobileMenuVisible ? (
                       <svg viewBox="0 0 1024 1024" className="w-6 h-6 transform rotate-180">
@@ -111,13 +112,13 @@ function Navbar() {
               </li>
             </ul>
 
-            {/* Accordion for Contact Us */}
+            {/* Accordion for Others */}
             {mobileMenuVisible && (
-              <div className="bg-gray-100 mt-4 px-6 py-2">
+              <div className="bg-gray-100 mt-4 px-6 py-">
                 <ul className="space-y-2">
                   <li>
                     <a href="https://home-page.com" className="text-black hover:text-[#d15213]">
-                      Home
+                      Scholoarship
                     </a>
                   </li>
                   <li>
@@ -146,28 +147,29 @@ function Navbar() {
           <div className="absolute top-full left-0 w-full bg-white shadow-lg py-4">
             <div className="max-w-screen-xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 px-6">
               <a href="https://home-page.com" className="flex items-center space-x-4">
-                <img alt="Home" src="home-image.png" className="w-8 h-8" />
+                <img alt="Home" src={Scholar} className="w-8 h-8" />
                 <div>
-                  <span className="font-semibold">Home</span>
+                  <span className="font-semibold"> Scholarship </span>
                   <span className="block text-gray-500">Page One Description</span>
                 </div>
               </a>
               <a href="https://report-lost-item-page.com" className="flex items-center space-x-4">
-                <img alt="Report Lost Item" src="report-lost-item-image.png" className="w-8 h-8" />
+                <img alt="Report Lost Item" src='https://static.vecteezy.com/system/resources/previews/019/023/680/original/fountain-pen-icon-png.png'
+                  className="w-8 h-8" />
                 <div>
                   <span className="font-semibold">Report Lost Item</span>
                   <span className="block text-gray-500">Page Two Description</span>
                 </div>
               </a>
               <a href="https://found-items-page.com" className="flex items-center space-x-4">
-                <img alt="Found Items" src="found-items-image.png" className="w-8 h-8" />
+                <img alt="Found Items" src="https://pngimg.com/uploads/laptop/laptop_PNG5905.png" className="w-8 h-8" />
                 <div>
                   <span className="font-semibold">Found Items</span>
                   <span className="block text-gray-500">Page Three Description</span>
                 </div>
               </a>
               <a href="https://contact-page.com" className="flex items-center space-x-4">
-                <img alt="Contact" src="contact-image.png" className="w-8 h-8" />
+                <img alt="Contact" src='https://www.svdj.nl/wp-content/uploads/2021/10/pngfind.com-contact-icons-png-98971.png' className="w-8 h-8" />
                 <div>
                   <span className="font-semibold">Contact</span>
                   <span className="block text-gray-500">Page Four Description</span>
