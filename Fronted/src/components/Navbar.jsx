@@ -59,10 +59,10 @@ function Navbar() {
         {/* Mobile Menu Button */}
         <div className="flex md:hidden">
           <div className="flex mr-3 space-x-2 text-[15px] font-semibold  justify-center">
-            <button className="bg-[#d15213] text-white p-2 border rounded-3xl border-[#d15213] hover:bg-black">
+            <button className="bg-[#d15213] text-white p-2 border rounded-2xl border-[#d15213] hover:bg-black">
               Get Started
             </button>
-            <button className=" border-[#d15213] border p-2  text-[#d15213]  rounded-3xl hover:bg-[#d15213] hover:text-white">
+            <button className=" border-[#d15213] border p-2  text-[#d15213]  rounded-2xl hover:bg-[#d15213] hover:text-white">
               Login
             </button>
           </div>
@@ -76,18 +76,18 @@ function Navbar() {
         {mobileMenuVisible && (
           <nav className="md:hidden bg-white absolute top-full left-0 w-full py-4">
             <ul className="flex flex-col space-y-4 px-6 font-semibold hover:text-[#d15213]">
-              <li className="text-black hover:text-[#d15213]">
-                <a href="/" >
+              <li >
+                <a href="/" className="text-black hover:text-[#d15213]">
                   NIT JSR Official Website
                 </a>
               </li>
               <li>
-                <a href="/">
+                <a href="/"className="text-black hover:text-[#d15213]">
                   Report A Complain
                 </a>
               </li>
               <li>
-                <a href="/" target="_blank" rel="noreferrer noopener">
+                <a href="/" target="_blank" rel="noreferrer noopener" className="text-black hover:text-[#d15213]">
                   Couse Notes
                 </a>
               </li>

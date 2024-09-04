@@ -11,10 +11,10 @@ const Hero1 = () => {
                         Introducing Our Lost and Found and Students helper Community Platform... Dear NIT JSR Community, Are you tired of searching high and low for that missing backpack or smartphone? Have you ever stumbled upon a forgotten item and wondered how to reunite it with its owner? Look no further! We’re thrilled to introduce our new platform—a hub where you can report lost items, post found treasures, and connect with fellow students to reclaim your belongings.          </p>
                 </div>
                 <div className="flex gap-4 pt-4 flex-wrap justify-center w-full md:flex-nowrap">
-                    <button className="bg-[#d15213] text-white px-7 py-3 border rounded-3xl font-semibold border-[#d15213] hover:bg-black w-full md:w-auto">
+                    <button className="bg-[#d15213] text-white px-7 py-2 border rounded-3xl font-semibold border-[#d15213] hover:bg-black w-full md:w-auto">
                         Report Lost Item
                     </button>
-                    <button className="border border-blue-600 text-blue-600 py-2 px-4 rounded w-full md:w-auto">
+                    <button className="border-[#d15213] border px-7 py-2  text-[#d15213]  rounded-3xl hover:bg-[#d15213] hover:text-white w-full md:w-auto">
                         Find Lost Item
                     </button>
                 </div>
