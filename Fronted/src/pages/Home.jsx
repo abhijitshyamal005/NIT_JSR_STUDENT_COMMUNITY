@@ -1,3 +1,4 @@
+import Footer from "../components/Footer"
 
 function Home() {
   return (
@@ -8,6 +9,7 @@ function Home() {
     <h1> Now its edited </h1>
     <p>This is a paragraph</p>
     <h2> Frock check</h2>
+    <Footer/>
     </>
   )
 }
