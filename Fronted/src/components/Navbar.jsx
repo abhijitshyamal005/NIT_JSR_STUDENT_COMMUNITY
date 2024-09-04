@@ -18,13 +18,13 @@ function Navbar() {
 
         <div className="hidden md:flex flex-1 justify-between ">
           <nav className="flex items-center space-x-8 ml-5 text-black font-semibold font-sans ">
-            <a href="https://official-website.com" className="text-black hover:text-[#d15213]">
+            <a href="/" className="text-black hover:text-[#d15213]">
               NIT JSR Official Website
             </a>
-            <a href="https://report-lost-items.com" className="text-black hover:text-[#d15213]">
+            <a href="/" className="text-black hover:text-[#d15213]">
               Report A Complain
             </a>
-            <a href="https://find-items.com" target="_blank" rel="noreferrer noopener" className="text-black hover:text-[#d15213]">
+            <a href="/" target="_blank" rel="noreferrer noopener" className="text-black hover:text-[#d15213]">
               Couse Notes
             </a>
             <div
@@ -77,17 +77,17 @@ function Navbar() {
           <nav className="md:hidden bg-white absolute top-full left-0 w-full py-4">
             <ul className="flex flex-col space-y-4 px-6 font-semibold hover:text-[#d15213]">
               <li className="text-black hover:text-[#d15213]">
-                <a href="https://official-website.com" >
+                <a href="/" >
                   NIT JSR Official Website
                 </a>
               </li>
               <li>
-                <a href="https://report-lost-items.com">
+                <a href="/">
                   Report A Complain
                 </a>
               </li>
               <li>
-                <a href="https://find-items.com" target="_blank" rel="noreferrer noopener">
+                <a href="/" target="_blank" rel="noreferrer noopener">
                   Couse Notes
                 </a>
               </li>
