@@ -7,6 +7,7 @@ import Features1 from "../components/Features1"
 import Banner1 from "../components/Banner1"
 import Features2 from "../components/Features2"
 import About from "../components/About"
+import Testimonial from "../components/Testimonial"
 
 
 function Home() {
@@ -18,6 +19,7 @@ function Home() {
     <Banner1/>
     <Features2/>
     <About/>
+    <Testimonial/>
     <Footer/>
     </>
   )
