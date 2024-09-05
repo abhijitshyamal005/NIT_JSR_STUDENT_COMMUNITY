@@ -1,31 +1,31 @@
 import  { useState } from 'react';
 
-const Features24 = () => {
+const Features1 = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
     <div className="py-10 items-center ">
       <div className="w-full grid gap-20 lg:grid-cols-2 relative lg:ml-[100px]">
-        <div className="flex h-full relative">
+        <div className="flex h-full relative ">
           {activeTab === 0 && (
             <img
               alt="Illustration of lost items reporting"
               src="https://assets.telegraphindia.com/telegraph/2020/Oct/1603102691_18jamnit-3.jpg"
-              className="animate-fadeIn"
+              className="rounded-2xl animate-fadeIn "
             />
           )}
           {activeTab === 1 && (
             <img
               alt="Illustration of searching found items by categories"
               src="https://i.ytimg.com/vi/8pCo6nO7yGE/maxresdefault.jpg"
-              className="animate-fadeIn"
+              className="rounded-2xl  animate-fadeIn"
             />
           )}
           {activeTab === 2 && (
             <img
               alt="Illustration of direct communication feature"
               src="https://assets.telegraphindia.com/telegraph/2020/Oct/1602677859_1602501115674_12jamnit-1.jpg"
-              className="animate-fadeIn"
+              className="rounded-2xl  animate-fadeIn"
             />
           )}
         </div>
@@ -82,4 +82,4 @@ const Features24 = () => {
   );
 };
 
-export default Features24;
+export default Features1;
