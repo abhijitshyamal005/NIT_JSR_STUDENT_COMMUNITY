@@ -8,6 +8,7 @@ import Banner1 from "../components/Banner1"
 import Features2 from "../components/Features2"
 import About from "../components/About"
 import Testimonial from "../components/Testimonial"
+import ContactUs from "../components/ContactUs"
 
 
 function Home() {
@@ -20,6 +21,7 @@ function Home() {
     <Features2/>
     <About/>
     <Testimonial/>
+    <ContactUs/>
     <Footer/>
     </>
   )
