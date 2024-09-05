@@ -1,19 +1,20 @@
-import  { useState } from 'react';
+import { useState } from 'react';
 import dev2 from '../assets/dev2.jpg';
 import dev1 from '../assets/dev1.jpeg';
+import { XMarkIcon } from '@heroicons/react/24/outline'; // Importing the close icon
 
 const developers = [
   {
     name: 'Abhijit Shyamal',
     email: '2023pgcsca003@nitjsr.ac.in',
     imageSrc: dev2,
-    description: 'Front-end Developer with a passion for creating beautiful and responsive user interfaces.And Back-end Developer specializing in server-side logic and database management.',
+    description: 'Front-end Developer with a passion for creating beautiful and responsive user interfaces. And Back-end Developer specializing in server-side logic and database management.',
   },
   {
     name: 'Gourab Bistu',
     email: '2023pgcsca079@nitjsr.ac.in',
     imageSrc: dev1,
-    description: 'Full stack Developer with a passion for creating beautiful  user interfaces And specializing in database management.',
+    description: 'Full stack Developer with a passion for creating beautiful user interfaces And specializing in database management.',
   },
 ];
 
@@ -71,7 +72,7 @@ const ContactUs = () => {
               <p className="text-center text-sm mb-4">{dev.description}</p>
               <button
                 onClick={() => handleSendMessage(dev)}
-                className="py-2 px-4 font-semibold  bg-[#D15213] text-white rounded-3xl hover:bg-[#9c3c0c]"
+                className="py-2 px-4 font-semibold bg-[#D15213] text-white rounded-3xl hover:bg-[#9c3c0c]"
               >
                 Send Message
               </button>
@@ -83,7 +84,13 @@ const ContactUs = () => {
       {/* Popup Modal */}
       {showPopup && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-white rounded-lg shadow-md p-6 w-80">
+          <div className="relative bg-white rounded-lg shadow-md p-6 w-80">
+            <button
+              onClick={handleClosePopup}
+              className="absolute top-3 right-3 p-2 rounded-full  text-white bg-[#D15213] hover:bg-[#96390a]"
+            >
+              <XMarkIcon className="w-4 h-4" />
+            </button>
             <h4 className="text-xl font-semibold mb-4">Send a Message to {currentDev.name}</h4>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
@@ -126,12 +133,6 @@ const ContactUs = () => {
                 Send
               </button>
             </form>
-            <button
-              onClick={handleClosePopup}
-              className="mt-4 py-2 px-4 bg-[#ea7439] rounded-md hover:bg-[#a14b20]"
-            >
-              Close
-            </button>
           </div>
         </div>
       )}
@@ -139,17 +140,17 @@ const ContactUs = () => {
       {/* Thank You Popup */}
       {popupContent.message && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-white rounded-lg shadow-md p-6 w-80">
+          <div className="relative bg-white rounded-lg shadow-md p-6 w-80">
+            <button
+              onClick={handleClosePopup}
+              className="absolute top-3 right-3 p-2 text-gray-500 hover:text-gray-700"
+            >
+              <XMarkIcon className="w-6 h-6" />
+            </button>
             <h4 className="text-xl font-semibold mb-4">Message Sent!</h4>
             <p className="mb-2"><strong>Name:</strong> {popupContent.name}</p>
             <p className="mb-2"><strong>Email:</strong> {popupContent.email}</p>
             <p className="mb-4"><strong>Message:</strong> {popupContent.message}</p>
-            <button
-              onClick={handleClosePopup}
-              className="py-2 px-4 bg-[#D15213] text-white rounded-md hover:bg-[#9c3c0c]"
-            >
-              Close
-            </button>
           </div>
         </div>
       )}
