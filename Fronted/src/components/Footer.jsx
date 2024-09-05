@@ -2,7 +2,7 @@ import logo from '../assets/nit-jamshedpur.png';
 
 const Footer = () => {
   return (
-    <footer className="w-full py-8 flex flex-col items-center bg-white text-black">
+    <footer className="w-full py-8 flex flex-col items-center bg-white text-black font-normal  ">
       <div className="w-full max-w-6xl flex flex-col items-center">
         <div className="flex flex-col items-center">
           <img alt="NIT Jamshedpur" src={logo} className="h-8 mb-4" />

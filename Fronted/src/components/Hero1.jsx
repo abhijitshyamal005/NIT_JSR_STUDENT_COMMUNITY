@@ -1,4 +1,4 @@
-
+import BlogCard from '../extraComponents/BlogCard';
 const Hero1 = () => {
     return (
         <div className="flex flex-col items-center w-full h-auto overflow-hidden relative gap-12 flex-shrink-0">
@@ -22,70 +22,22 @@ const Hero1 = () => {
             <div className="flex flex-col gap-6 w-full relative">
                 <div className="flex gap-6 w-full overflow-hidden">
                     <div className="flex gap-4 w-full animate-slide">
-                        <img
-                            alt="Lost and Found Illustration"
-                            src="https://nitjsr.ac.in/backend/uploads/institute_event/3a4fc998-a1c4-4d6e-ae77-cbcc8f5711ed-POSTER_page-0001.jpg"
-                            className="w-96 h-96 object-cover"
-                        />
-                        <img
-                            alt="College Campus Illustration"
-                            src="https://th.bing.com/th/id/OIP._AXXdaW5naBxIKzRdrIyYwHaEa?rs=1&pid=ImgDetMain"
-                            className="w-96 h-96 object-cover"
-                        />
-                        <img
-                            alt="Student with Lost Item Illustration"
-                            src="https://cache.careers360.mobi/media/colleges/reviews/2021/6/16/164337/1623839844382.jpeg"
-                            className="w-96 h-96 object-cover"
-                        />
-                        <img
-                            alt="Hero Image"
-                            src="https://nitjsr.ac.in/backend/uploads/institute_event/0f8c445e-72d7-462b-b7b9-dfaabf283ad9-Screenshot%202024-05-27%20123444.png"
-                            className="w-96 h-96 object-cover"
-                        />
-                        <img
-                            alt="Hero Image"
-                            src="https://nitjsr.ac.in/backend/uploads/banner/add/ff59bec2-bf2a-4675-945d-ba74f616f6d3-WhatsApp%20Image%202024-05-16%20at%2019.10.52_179451f8.jpg"
-                            className="w-96 h-96 object-cover"
-                        />
-                        <img
-                            alt="Hero Image"
-                            src="https://nitjsr.ac.in/backend/uploads/banner/add/b7314301-6613-4089-b099-f8b7eedd9a18-WhatsApp%20Image%202024-05-09%20at%2017.01.04.jpeg"
-                            className="w-96 h-96 object-cover"
-                        />
+                        <BlogCard />
+                        <BlogCard />
+                        <BlogCard />
+                        <BlogCard />
+                        <BlogCard />
+
+
                     </div>
                 </div>
                 <div className="flex gap-6 w-full overflow-hidden">
                     <div className="flex gap-4 w-full animate-slide-reverse">
-                        <img
-                            alt="Hero Image"
-                            src="https://nitjsr.ac.in/backend/uploads/banner/add/3bad9244-6c00-4ef6-9281-67cffa1f1967-imresizer-1724046512657.jpg"
-                            className="w-96 h-96 object-cover"
-                        />
-                        <img
-                            alt="Hero Image"
-                            src="https://nitjsr.ac.in/backend/uploads/banner/add/ecb12f68-a5cb-4cec-aa33-c0ac7d622791-1.jpg"
-                            className="w-96 h-96 object-cover"
-                        />
-                        <img
-                            alt="Hero Image"
-                            src="https://nitjsr.ac.in/backend/uploads/banner/add/0fb4786f-215e-4071-bd8f-5fc554d59ac8-IMG-20240622-WA0004.jpg"
-                            className="w-96 h-96 object-cover"
-                        />
-                        <img
-                            alt="Hero Image"
-                            src="https://nitjsr.ac.in/backend/uploads/institute_event/24743577-6857-46da-875d-5f3e1e99a039-Screenshot%202024-06-05%20155351.png"
-                            className="w-96 h-96 object-cover"
-                        />
-                        <img
-                            alt="Hero Image"
-                            src="https://i.ytimg.com/vi/pfGfo3Mzt-w/maxresdefault.jpg"
-                            className="w-96 h-96 object-cover"
-                        />
-                        <img
-                            alt="Hero Image"
-                            src="https://nitjsr.ac.in/backend/uploads/banner/add/5276f1d7-95d6-4782-81fa-b25ba86bd912-July%2015th%202023.jpeg"
-                            className="w-96 h-96 object-cover"
-                        />
+                        <BlogCard />
+                        <BlogCard />
+                        <BlogCard />
+                        <BlogCard />
+                        <BlogCard />
                     </div>
                 </div>
             </div>

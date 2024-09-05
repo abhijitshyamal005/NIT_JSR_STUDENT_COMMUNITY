@@ -117,22 +117,22 @@ function Navbar() {
               <div className="bg-gray-100 mt-4 px-6 py-">
                 <ul className="space-y-2">
                   <li>
-                    <a href="https://home-page.com" className="text-black hover:text-[#d15213]">
+                    <a href="" className="text-black hover:text-[#d15213]">
                       Scholoarship
                     </a>
                   </li>
                   <li>
-                    <a href="https://report-lost-item-page.com" className="text-black hover:text-[#d15213]">
+                    <a href="" className="text-black hover:text-[#d15213]">
                       Report Lost Item
                     </a>
                   </li>
                   <li>
-                    <a href="https://found-items-page.com" className="text-black hover:text-[#d15213]">
+                    <a href="" className="text-black hover:text-[#d15213]">
                       Found Items
                     </a>
                   </li>
                   <li>
-                    <a href="https://contact-page.com" className="text-black hover:text-[#d15213]">
+                    <a href="" className="text-black hover:text-[#d15213]">
                       Contact
                     </a>
                   </li>
