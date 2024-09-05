@@ -12,8 +12,8 @@ const Features2 = () => {
                         onClick={() => setActiveTab(0)}
                         className="cursor-pointer flex gap-6"
                     >
-                          <div className="flex flex-col justify-center gap-4">
-                          <h2 className="text-2xl font-semibold">Report Lost Items</h2>
+                        <div className="flex flex-col justify-center gap-4">
+                            <h2 className="text-2xl font-semibold">Report Lost Items</h2>
                             <span className="text-base">
                                 Quickly report lost items with detailed descriptions
                             </span>
@@ -27,8 +27,8 @@ const Features2 = () => {
                         onClick={() => setActiveTab(1)}
                         className="cursor-pointer flex gap-6"
                     >
-                          <div className="flex flex-col justify-center gap-4">
-                          <h2 className="text-2xl font-semibold">Report Lost Items</h2>
+                        <div className="flex flex-col justify-center gap-4">
+                            <h2 className="text-2xl font-semibold">Report Lost Items</h2>
                             <span className="text-base">
                                 Easily search for found items by categories
                             </span>
@@ -42,8 +42,8 @@ const Features2 = () => {
                         onClick={() => setActiveTab(2)}
                         className="cursor-pointer flex gap-6"
                     >
-                          <div className="flex flex-col justify-center gap-4">
-                          <h2 className="text-2xl font-semibold">Report Lost Items</h2>
+                        <div className="flex flex-col justify-center gap-4">
+                            <h2 className="text-2xl font-semibold">Report Lost Items</h2>
                             <span className="text-base">
                                 Contact finders directly through the platform
                             </span>
