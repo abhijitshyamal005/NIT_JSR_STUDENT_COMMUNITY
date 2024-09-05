@@ -2,41 +2,41 @@ import  { useState } from 'react';
 
 const testimonialsData = [
   {
-    name: 'Sarah Johnson',
-    position: 'Senior at ABC University',
+    name: 'Debasis Sahoo',
+    position: 'MCA 2024 ,Senior at NIT Jamshedpur',
     imageSrc: 'https://th.bing.com/th/id/OIP.uao3bZ8-EDuPh-gQUL48bwHaLH?rs=1&pid=ImgDetMain',
     review: 'This platform is a game-changer for our community. It has helped reunite so many lost items with their owners. Kudos to the team behind it!',
   },
   {
-    name: 'Michael Lee',
-    position: 'Faculty at XYZ College',
+    name: 'Dr. Mayukh Sarker',
+    position: 'CSE Faculty at NIT Jamshedpur',
     imageSrc: 'https://www.prasashan.com/wp-content/uploads/2020/08/Dinesh-Kumar-Ghimire.jpg',
     review: 'I found a set of keys near the library and was able to connect with the owner through this website. It’s such a convenient and efficient way to help others.',
   },
   {
-    name: 'Emily Chen',
-    position: 'Freshman at LMN Institute',
+    name: 'Labani Sahoo',
+    position: 'Librarian at NIT Jamshedpur',
     imageSrc: 'https://th.bing.com/th/id/OIP.KHeRBPylQ6fI05-toDQPyQHaHZ?rs=1&pid=ImgDetMain',
     review: 'As a staff member, I’ve seen firsthand how this platform fosters a sense of community and helpfulness among students and faculty. It’s truly remarkable.',
   },
   {
-    name: 'David Rodriguez',
-    position: 'Staff at PQR College',
+    name: 'Sukanya Raj',
+    position: 'CSE 2026, Student at NIT Jamshedpur',
     imageSrc: 'https://images.unsplash.com/photo-1472521882609-05fb39814d60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyNDk2Nzk4MHw&ixlib=rb-4.0.3&q=80&w=1080',
     review: 'I highly recommend using this website if you’ve lost or found something on campus. It’s user-friendly and has been instrumental in reuniting people with their belongings.',
   },
   // Additional testimonials for pagination
   {
-    name: 'John Doe',
-    position: 'Graduate at DEF University',
+    name: 'Rudranil Khanra',
+    position: 'ME 2025, Student at NIT Jamshedpur',
     imageSrc: 'https://randomuser.me/api/portraits/men/1.jpg',
-    review: 'The website is intuitive and easy to use. I found my lost wallet within a day!',
+    review: 'The website is intuitive and easy to use. I found my first Scholarship from this website',
   },
   {
-    name: 'Jane Smith',
-    position: 'Student at GHI University',
+    name: 'Akansha Mishre',
+    position: ' MCA 2026,Student at NIT Jamshedpur',
     imageSrc: 'https://randomuser.me/api/portraits/women/2.jpg',
-    review: 'Thanks to this platform, I was able to return a lost laptop to its owner. Amazing service!',
+    review: 'Thanks to this platform, I was able to Complain a college staff help of this website higher authority take action against the staff. Amazing service!',
   },
 ];
 
