@@ -7,7 +7,7 @@ const Features2 = () => {
         <div className="py-16 flex justify-center">
             <div className="w-full max-w-screen-xl grid gap-8 lg:grid-cols-2 relative">
                 {/* Text Content Section */}
-                <div className="flex flex-col justify-center gap-6 ml-7">
+                <div className="flex flex-col justify-center gap-6 ml-10">
                     <div
                         onClick={() => setActiveTab(0)}
                         className="cursor-pointer flex gap-6"
