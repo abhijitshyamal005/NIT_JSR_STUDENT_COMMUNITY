@@ -11,21 +11,21 @@ const Features1 = () => {
             <img
               alt="Illustration of lost items reporting"
               src="https://assets.telegraphindia.com/telegraph/2020/Oct/1603102691_18jamnit-3.jpg"
-              className="rounded-2xl animate-fadeIn "
+              className="lg:rounded-2xl animate-fadeIn "
             />
           )}
           {activeTab === 1 && (
             <img
               alt="Illustration of searching found items by categories"
               src="https://i.ytimg.com/vi/8pCo6nO7yGE/maxresdefault.jpg"
-              className="rounded-2xl  animate-fadeIn"
+              className="lg:rounded-2xl  animate-fadeIn"
             />
           )}
           {activeTab === 2 && (
             <img
               alt="Illustration of direct communication feature"
               src="https://assets.telegraphindia.com/telegraph/2020/Oct/1602677859_1602501115674_12jamnit-1.jpg"
-              className="rounded-2xl  animate-fadeIn"
+              className="lg:rounded-2xl  animate-fadeIn"
             />
           )}
         </div>
