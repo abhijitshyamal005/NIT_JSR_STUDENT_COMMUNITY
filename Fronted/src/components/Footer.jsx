@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="w-full max-w-6xl flex flex-col items-center">
         <div className="flex flex-col items-center">
           <img alt="NIT Jamshedpur" src={logo} className="h-11 mb-4" />
-          <span className="font-semibold text-xl text-[#d15213]">NIT Jamshedpur Studens Community</span>
+          <span className="font-semibold text-xl text-[#d15213]">NIT Jamshedpur Students Community</span>
         </div>
         <div className="mt-6 flex flex-col sm:flex-row sm:justify-center gap-4">
           <a href="/" target="_blank" rel="noopener noreferrer" className="hover:text-[#d15213]">
