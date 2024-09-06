@@ -38,6 +38,19 @@ const testimonialsData = [
     imageSrc: 'https://randomuser.me/api/portraits/women/2.jpg',
     review: 'Thanks to this platform, I was able to Complain a college staff help of this website higher authority take action against the staff. Amazing service!',
   },
+  {
+    name: 'Rahul Dev',
+    position: 'ECE 2025, Student at NIT Jamshedpur',
+    imageSrc: 'https://randomuser.me/api/portraits/men/10.jpg',
+    review: 'I misplaced my backpack, but thanks to this site, I got it back the very next day! Great initiative by the college.',
+  },
+  {
+    name: 'Shreya Gupta',
+    position: 'MBA 2024, Student at NIT Jamshedpur',
+    imageSrc: 'https://randomuser.me/api/portraits/women/5.jpg',
+    review: 'This platform is incredibly easy to use, and the community is so helpful. I found my misplaced phone within a few hours thanks to a kind stranger.',
+  },
+  
 ];
 
 const Testimonial = () => {
