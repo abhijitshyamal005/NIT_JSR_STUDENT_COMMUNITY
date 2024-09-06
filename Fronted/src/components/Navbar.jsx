@@ -18,13 +18,13 @@ function Navbar() {
 
         <div className="hidden md:flex flex-1 justify-between ">
           <nav className="flex items-center space-x-8 ml-5 text-black font-semibold font-sans ">
-            <a href="https://official-website.com" className="text-black hover:text-[#d15213]">
+            <a href="/" className="text-black hover:text-[#d15213]">
               NIT JSR Official Website
             </a>
-            <a href="https://report-lost-items.com" className="text-black hover:text-[#d15213]">
+            <a href="/" className="text-black hover:text-[#d15213]">
               Report A Complain
             </a>
-            <a href="https://find-items.com" target="_blank" rel="noreferrer noopener" className="text-black hover:text-[#d15213]">
+            <a href="/" target="_blank" rel="noreferrer noopener" className="text-black hover:text-[#d15213]">
               Couse Notes
             </a>
             <div
@@ -59,10 +59,10 @@ function Navbar() {
         {/* Mobile Menu Button */}
         <div className="flex md:hidden">
           <div className="flex mr-3 space-x-2 text-[15px] font-semibold  justify-center">
-            <button className="bg-[#d15213] text-white p-2 border rounded-3xl border-[#d15213] hover:bg-black">
+            <button className="bg-[#d15213] text-white p-2 border rounded-2xl border-[#d15213] hover:bg-black">
               Get Started
             </button>
-            <button className=" border-[#d15213] border p-2  text-[#d15213]  rounded-3xl hover:bg-[#d15213] hover:text-white">
+            <button className=" border-[#d15213] border p-2  text-[#d15213]  rounded-2xl hover:bg-[#d15213] hover:text-white">
               Login
             </button>
           </div>
@@ -76,18 +76,18 @@ function Navbar() {
         {mobileMenuVisible && (
           <nav className="md:hidden bg-white absolute top-full left-0 w-full py-4">
             <ul className="flex flex-col space-y-4 px-6 font-semibold hover:text-[#d15213]">
-              <li className="text-black hover:text-[#d15213]">
-                <a href="https://official-website.com" >
+              <li >
+                <a href="/" className="text-black hover:text-[#d15213]">
                   NIT JSR Official Website
                 </a>
               </li>
               <li>
-                <a href="https://report-lost-items.com">
+                <a href="/"className="text-black hover:text-[#d15213]">
                   Report A Complain
                 </a>
               </li>
               <li>
-                <a href="https://find-items.com" target="_blank" rel="noreferrer noopener">
+                <a href="/" target="_blank" rel="noreferrer noopener" className="text-black hover:text-[#d15213]">
                   Couse Notes
                 </a>
               </li>
@@ -117,22 +117,22 @@ function Navbar() {
               <div className="bg-gray-100 mt-4 px-6 py-">
                 <ul className="space-y-2">
                   <li>
-                    <a href="https://home-page.com" className="text-black hover:text-[#d15213]">
+                    <a href="" className="text-black hover:text-[#d15213]">
                       Scholoarship
                     </a>
                   </li>
                   <li>
-                    <a href="https://report-lost-item-page.com" className="text-black hover:text-[#d15213]">
+                    <a href="" className="text-black hover:text-[#d15213]">
                       Report Lost Item
                     </a>
                   </li>
                   <li>
-                    <a href="https://found-items-page.com" className="text-black hover:text-[#d15213]">
+                    <a href="" className="text-black hover:text-[#d15213]">
                       Found Items
                     </a>
                   </li>
                   <li>
-                    <a href="https://contact-page.com" className="text-black hover:text-[#d15213]">
+                    <a href="" className="text-black hover:text-[#d15213]">
                       Contact
                     </a>
                   </li>
