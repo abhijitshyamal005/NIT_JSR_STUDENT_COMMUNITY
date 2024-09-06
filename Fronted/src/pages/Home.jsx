@@ -1,6 +1,7 @@
 
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
+import Testimonial from "../components/Testimonial"
 import Hero1 from "../components/Hero1"
 import Features1 from "../components/Features1"
 import Banner1 from "../components/Banner1"
