@@ -4,7 +4,7 @@ const Features1 = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <div className="py-10 items-center ">
+    <div className="py-10 items-center truncate ">
       <div className="w-full grid gap-20 lg:grid-cols-2 relative lg:ml-[100px]">
         <div className="flex h-full relative ">
           {activeTab === 0 && (
