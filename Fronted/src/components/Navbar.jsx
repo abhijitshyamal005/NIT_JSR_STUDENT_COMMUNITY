@@ -132,7 +132,7 @@ function Navbar() {
                     </a>
                   </li>
                   <li>
-                    <a href="" className="text-black hover:text-[#d15213]">
+                    <a href="/not-found" className="text-black hover:text-[#d15213]">
                       Contact
                     </a>
                   </li>
@@ -146,14 +146,14 @@ function Navbar() {
         {Drop && (
           <div className="absolute top-full left-0 w-full bg-white shadow-lg py-4">
             <div className="max-w-screen-xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 px-6">
-              <a href="https://home-page.com" className="flex items-center space-x-4">
+              <a href="/not-found" className="flex items-center space-x-4">
                 <img alt="Home" src={Scholar} className="w-8 h-8" />
                 <div>
                   <span className="font-semibold"> Scholarship </span>
                   <span className="block text-gray-500">Page One Description</span>
                 </div>
               </a>
-              <a href="https://report-lost-item-page.com" className="flex items-center space-x-4">
+              <a href="/not-found" className="flex items-center space-x-4">
                 <img alt="Report Lost Item" src='https://static.vecteezy.com/system/resources/previews/019/023/680/original/fountain-pen-icon-png.png'
                   className="w-8 h-8" />
                 <div>
@@ -161,14 +161,14 @@ function Navbar() {
                   <span className="block text-gray-500">Page Two Description</span>
                 </div>
               </a>
-              <a href="https://found-items-page.com" className="flex items-center space-x-4">
+              <a href="/not-found" className="flex items-center space-x-4">
                 <img alt="Found Items" src="https://pngimg.com/uploads/laptop/laptop_PNG5905.png" className="w-8 h-8" />
                 <div>
                   <span className="font-semibold">Found Items</span>
                   <span className="block text-gray-500">Page Three Description</span>
                 </div>
               </a>
-              <a href="https://contact-page.com" className="flex items-center space-x-4">
+              <a href="/not-fiound" className="flex items-center space-x-4">
                 <img alt="Contact" src='https://www.svdj.nl/wp-content/uploads/2021/10/pngfind.com-contact-icons-png-98971.png' className="w-8 h-8" />
                 <div>
                   <span className="font-semibold">Contact</span>
