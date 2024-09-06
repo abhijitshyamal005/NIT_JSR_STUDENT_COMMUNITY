@@ -1,6 +1,5 @@
 
 import Navbar from "../components/Navbar"
-
 import Footer from "../components/Footer"
 import Hero1 from "../components/Hero1"
 import Features1 from "../components/Features1"
