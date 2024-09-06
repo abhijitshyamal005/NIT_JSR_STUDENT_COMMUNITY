@@ -12,7 +12,7 @@ const developers = [
   },
   {
     name: 'Gourab Bistu',
-    email: '2023pgcsca079@nitjsr.ac.in',
+    email: '2023pgcsca089@nitjsr.ac.in',
     imageSrc: dev1,
     description: 'Full stack Developer with a passion for creating beautiful user interfaces And specializing in database management.',
   },
