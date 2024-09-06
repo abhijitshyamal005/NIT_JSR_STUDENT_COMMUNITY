@@ -1,11 +1,8 @@
 import React from 'react'
 
 function Testimonial() {
-  return (  
-    <div>
-      
-    </div>
-
+  return (
+    <div>Testimonial</div>
   )
 }
 

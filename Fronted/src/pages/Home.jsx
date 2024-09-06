@@ -17,6 +17,7 @@ function Home() {
     <Features1/>
     <Banner1/>
     <Features2/>
+    <Testimonial/>
 
     
     <Footer/>
