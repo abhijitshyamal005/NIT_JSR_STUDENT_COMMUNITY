@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -22,7 +23,7 @@ const About = () => {
         <div className="w-full lg:w-1/2 relative">
           <div className="space-y-8 ">
             <div className="sticky  top-10 z-30 mt-[100px] bg-gray-100 p-7 rounded-lg transform -rotate-2 hover:rotate-2 transition-transform duration-300 hover:scale-110">
-              <h1 className="text-3xl font-bold">Create an Account</h1>
+              <Link to='/registration' className="text-3xl font-bold">Create an Account</Link>
               <span className="block text-center mt-4">
                 Sign up with your college email and subscribe to get access to all features of this platform.
               </span>

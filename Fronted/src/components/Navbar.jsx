@@ -15,14 +15,16 @@ function Navbar() {
   return (
     <header className="sticky top-0 w-full z-10 bg-white flex justify-center ">
       <div className="w-full max-w-screen-xl flex items-center justify-between p-6">
+        <Link to='/'>
         <img alt="logo" src={logo} className="h-12" />
+        </Link>
 
         <div className="hidden md:flex flex-1 justify-between ">
           <nav className="flex items-center space-x-8 ml-5 text-black font-semibold font-sans ">
             <a href="https://nitjsr.ac.in/" className="text-black hover:text-[#d15213]">
               NIT JSR Official Website
             </a>
-            <a href="/" className="text-black hover:text-[#d15213]">
+            <a href='/complain'className="text-black hover:text-[#d15213]">
               Report A Complain
             </a>
             <a href="/" target="_blank" rel="noreferrer noopener" className="text-black hover:text-[#d15213]">
@@ -83,7 +85,7 @@ function Navbar() {
                 </a>
               </li>
               <li>
-                <a href="/"className="text-black hover:text-[#d15213]">
+                <a href='/complain'className="text-black hover:text-[#d15213]">
                   Report A Complain
                 </a>
               </li>
