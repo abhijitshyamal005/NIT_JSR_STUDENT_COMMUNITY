@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../assets/nit-jamshedpur.png';
 import Scholar from '../assets/Scholarship.png';
 
@@ -47,24 +48,24 @@ function Navbar() {
           </nav>
 
           <div className="flex items-center space-x-8 font-semibold align-end">
-            <button className="bg-[#d15213] text-white py-2 px-7 border-[2px] rounded-3xl border-[#d15213] hover:bg-black">
+            <Link to='/registration' className="bg-[#d15213] text-white py-2 px-7 border-[2px] rounded-3xl border-[#d15213] hover:bg-black">
               Get Started
-            </button>
-            <button className=" border-[#d15213] border-[2px] py-2 px-7 text-[#d15213]  rounded-3xl hover:bg-[#d15213] hover:text-white">
+            </Link>
+            <Link to='/login' className=" border-[#d15213] border-[2px] py-2 px-7 text-[#d15213]  rounded-3xl hover:bg-[#d15213] hover:text-white">
               Login
-            </button>
+            </Link>
           </div>
         </div>
 
         {/* Mobile Menu Button */}
         <div className="flex md:hidden">
           <div className="flex mr-3 space-x-2 text-[15px] font-semibold  justify-center">
-            <button className="bg-[#d15213] text-white p-2 border rounded-2xl border-[#d15213] hover:bg-black">
+            <Link to='/registration' className="bg-[#d15213] text-white p-2 border rounded-2xl border-[#d15213] hover:bg-black">
               Get Started
-            </button>
-            <button className=" border-[#d15213] border p-2  text-[#d15213]  rounded-2xl hover:bg-[#d15213] hover:text-white">
+            </Link>
+            <Link to='/login'className=" border-[#d15213] border p-2  text-[#d15213]  rounded-2xl hover:bg-[#d15213] hover:text-white">
               Login
-            </button>
+            </Link>
           </div>
           <button onClick={toggleMobileMenu}>
             <svg viewBox="0 0 1024 1024" className="w-6 h-6">

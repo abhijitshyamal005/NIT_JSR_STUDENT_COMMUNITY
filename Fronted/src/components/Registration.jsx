@@ -1,4 +1,4 @@
-import  { useState } from 'react';
+import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom'; // Import useNavigate
 
 const Registration = () => {
@@ -173,11 +173,21 @@ const Registration = () => {
 
           <p className="mt-6 text-center text-sm text-gray-600">
             Already have an account?{' '}
-            <Link to="/signin" className="text-primary-orange font-semibold hover:underline">
+            <Link to="/login" className="text-primary-orange font-semibold hover:underline">
               Sign In
             </Link>
           </p>
         </form>
+
+        {/* Back to Home Button */}
+        <div className="mt-6 text-center">
+          <button
+            onClick={() => navigate('/')}
+            className="text-primary-orange font-semibold hover:underline"
+          >
+            Back to Home
+          </button>
+        </div>
       </div>
     </div>
   );

@@ -3,12 +3,13 @@ import Home from './pages/Home'
 import NotFound from './pages/NotFound'
 import './App';
 import Registration from './components/Registration';
+import Login from './components/Login';
 
 const router = {
   home: '/',
   notFound: '/not-found',
-  registration:'/registration'
-  // Add more routes as needed
+  registration:'/registration',
+  login: '/login'
 }
 
 const App = () => {
@@ -16,7 +17,8 @@ const App = () => {
       <Routes>
         <Route path='/'element={<Home />} />
         <Route path='/not-found' element={<NotFound />} />
-        <Route path={router.registration} element={<Registration />} /> 
+        <Route path={router.registration} element={<Registration />} />
+        <Route path={router.login} element={<Login />} />
 
         {/* Add more routes here */}
         <Route path="*" element={<Navigate to={router.notFound} replace />} />
