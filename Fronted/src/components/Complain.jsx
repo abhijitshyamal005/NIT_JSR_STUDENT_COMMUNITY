@@ -101,7 +101,7 @@ const ComplaintPage = () => {
                                 name="email"
                                 value={studentDetails.email}
                                 onChange={handleInputChange}
-                                placeholder="Your Email"
+                                placeholder="Your College Email"
                                 className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
                             />
 
