@@ -19,7 +19,7 @@ function Navbar() {
 
         <div className="hidden md:flex flex-1 justify-between ">
           <nav className="flex items-center space-x-8 ml-5 text-black font-semibold font-sans ">
-            <a href="/" className="text-black hover:text-[#d15213]">
+            <a href="https://nitjsr.ac.in/" className="text-black hover:text-[#d15213]">
               NIT JSR Official Website
             </a>
             <a href="/" className="text-black hover:text-[#d15213]">
@@ -133,7 +133,7 @@ function Navbar() {
                     </a>
                   </li>
                   <li>
-                    <a href="/not-found" className="text-black hover:text-[#d15213]">
+                    <a href="/contact-us" className="text-black hover:text-[#d15213]">
                       Contact
                     </a>
                   </li>
@@ -169,7 +169,7 @@ function Navbar() {
                   <span className="block text-gray-500">Page Three Description</span>
                 </div>
               </a>
-              <a href="/not-fiound" className="flex items-center space-x-4">
+              <a href="/contact-us" className="flex items-center space-x-4">
                 <img alt="Contact" src='https://www.svdj.nl/wp-content/uploads/2021/10/pngfind.com-contact-icons-png-98971.png' className="w-8 h-8" />
                 <div>
                   <span className="font-semibold">Contact</span>

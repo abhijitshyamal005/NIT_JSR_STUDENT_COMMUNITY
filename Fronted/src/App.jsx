@@ -4,12 +4,14 @@ import NotFound from './pages/NotFound'
 import './App';
 import Registration from './components/Registration';
 import Login from './components/Login';
+import ContactUs from './components/ContactUs';
 
 const router = {
   home: '/',
   notFound: '/not-found',
   registration:'/registration',
-  login: '/login'
+  login: '/login',
+  ContactUs: '/contact-us',
 }
 
 const App = () => {
@@ -19,6 +21,7 @@ const App = () => {
         <Route path='/not-found' element={<NotFound />} />
         <Route path={router.registration} element={<Registration />} />
         <Route path={router.login} element={<Login />} />
+        <Route path={router.ContactUs} element={<ContactUs />} />
 
         {/* Add more routes here */}
         <Route path="*" element={<Navigate to={router.notFound} replace />} />
