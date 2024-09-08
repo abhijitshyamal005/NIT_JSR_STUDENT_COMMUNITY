@@ -45,7 +45,7 @@ function Navbar() {
             <a href='/complain' className="text-black hover:text-[#d15213]">
               Report A Complain
             </a>
-            <a href="/" target="_blank" rel="noreferrer noopener" className="text-black hover:text-[#d15213]">
+            <a href='/course-notes' target="_blank" rel="noreferrer noopener" className="text-black hover:text-[#d15213]">
               Course Notes
             </a>
             <div
@@ -174,7 +174,7 @@ function Navbar() {
                 </a>
               </li>
               <li>
-                <a href="/" target="_blank" rel="noreferrer noopener" className="text-black hover:text-[#d15213]">
+                <a href='/course-notes' target="_blank" rel="noreferrer noopener" className="text-black hover:text-[#d15213]">
                   Course Notes
                 </a>
               </li>
