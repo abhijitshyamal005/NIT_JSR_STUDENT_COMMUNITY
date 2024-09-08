@@ -1,15 +1,29 @@
-import Navbar from "./Navbar";
+import { useState } from 'react';
+import Navbar from './Navbar';
 import userProfilePic from '../assets/dev2.jpg'; // Your user profile image
 
-
 const Dashboard = () => {
+  const [isSidebarOpen, setSidebarOpen] = useState(false);
+
   return (
     <>
       <Navbar />
-      <div className="h-screen flex overflow-x-hidden">
+      <div className="h-screen flex flex-col md:flex-row overflow-x-hidden">
         
+        {/* Sidebar Toggle Button for Mobile */}
+        <button
+          className="md:hidden p-4 bg-orange-500 text-white"
+          onClick={() => setSidebarOpen(!isSidebarOpen)}
+        >
+          {isSidebarOpen ? 'Close Menu' : 'Open Menu'}
+        </button>
+
         {/* Sidebar */}
-        <aside className="w-64 text-center ml-3 rounded-md bg-orange-500 border-primary-orange text-white p-4">
+        <aside
+          className={`w-64 text-center ml-3 rounded-md bg-orange-500 text-white p-4 md:block ${
+            isSidebarOpen ? 'block' : 'hidden'
+          }`}
+        >
           <h2 className="text-2xl font-semibold mb-6">My Account</h2>
           <nav>
             <ul>
@@ -33,18 +47,18 @@ const Dashboard = () => {
         </aside>
 
         {/* Main Content */}
-        <main className="flex-1 p-6 bg-gray-100">
-          {/* Profile Section and Complaints Section in one row */}
+        <main className="flex-1 p-6 bg-gray-100 mt-4 md:mt-0">
+          {/* Profile Section and Complaints Section */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             
             {/* Profile Section */}
-            <section id="profile" className="bg-white p-6 rounded-lg shadow-lg min-w-0">
+            <section id="profile" className="bg-white p-6 rounded-lg shadow-lg">
               <h3 className="text-xl font-bold mb-4 text-orange-600">Profile Information</h3>
               <div className="flex items-center">
                 <img
                   src={userProfilePic}
                   alt="User Avatar"
-                  className="w-24 h-24 rounded-full mr-6"
+                  className="w-16 h-16 md:w-24 md:h-24 rounded-full mr-4 md:mr-6"
                 />
                 <div>
                   <p className="text-lg font-semibold">Abhijit Shyamal</p>
@@ -55,7 +69,7 @@ const Dashboard = () => {
             </section>
 
             {/* Complaints Section */}
-            <section id="complaints" className="bg-white p-6 rounded-lg shadow-lg min-w-0">
+            <section id="complaints" className="bg-white p-6 rounded-lg shadow-lg">
               <h3 className="text-xl font-bold mb-4 text-orange-600">My Complaints</h3>
               <ul>
                 <li className="mb-2">Complaint 1: <span className="text-gray-500">Pending</span></li>
@@ -67,11 +81,11 @@ const Dashboard = () => {
             </section>
           </div>
 
-          {/* Uploaded Notes Section and Coding Profile Section in one row */}
+          {/* Uploaded Notes Section and Coding Profile Section */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             
             {/* Uploaded Notes Section */}
-            <section id="notes" className="bg-white p-6 rounded-lg shadow-lg min-w-0">
+            <section id="notes" className="bg-white p-6 rounded-lg shadow-lg">
               <h3 className="text-xl font-bold mb-4 text-orange-600">Uploaded Notes</h3>
               <ul>
                 <li className="mb-2">Note 1: <a href="#" className="text-blue-500">Download</a></li>
@@ -83,7 +97,7 @@ const Dashboard = () => {
             </section>
 
             {/* Coding Profile Section */}
-            <section id="coding-profile" className="bg-white p-6 rounded-lg shadow-lg min-w-0">
+            <section id="coding-profile" className="bg-white p-6 rounded-lg shadow-lg">
               <h3 className="text-xl font-bold mb-4 text-orange-600">Coding Profile</h3>
               <p className="mb-2">Link your coding profiles from platforms like GitHub, LeetCode, or Codeforces.</p>
               <input
