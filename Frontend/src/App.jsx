@@ -6,6 +6,7 @@ import Registration from './components/Registration';
 import Login from './components/Login';
 import ContactUs from './components/ContactUs';
 import Complain from './components/Complain';
+import MyAccount from './components/MyAccount';
 
 const router = {
   home: '/',
@@ -14,6 +15,7 @@ const router = {
   login: '/login',
   ContactUs: '/contact-us',
   Complain: '/complain',
+  MyAccount: '/my-account',
 }
 
 const App = () => {
@@ -25,6 +27,7 @@ const App = () => {
         <Route path={router.login} element={<Login />} />
         <Route path={router.ContactUs} element={<ContactUs />} />
         <Route path={router.Complain} element={<Complain />} />
+        <Route path={router.MyAccount} element={<MyAccount />} />
 
         {/* Add more routes here */}
         <Route path="*" element={<Navigate to={router.notFound} replace />} />
