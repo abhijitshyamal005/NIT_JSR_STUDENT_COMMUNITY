@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import NavBar from './NavBar.jsx'; // Import the NavBar component
+import NavBar from './Navbar.jsx'; // Import the NavBar component
 import { Link } from 'react-router-dom';
 
 const ComplaintPage = () => {

@@ -25,7 +25,6 @@ const testimonialsData = [
     imageSrc: 'https://images.unsplash.com/photo-1472521882609-05fb39814d60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyNDk2Nzk4MHw&ixlib=rb-4.0.3&q=80&w=1080',
     review: 'I highly recommend using this website if you’ve lost or found something on campus. It’s user-friendly and has been instrumental in reuniting people with their belongings.',
   },
-  // Additional testimonials for pagination
   {
     name: 'Rudranil Khanra',
     position: 'ME 2025, Student at NIT Jamshedpur',

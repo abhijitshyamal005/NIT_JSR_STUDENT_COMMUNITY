@@ -20,7 +20,7 @@ const About = () => {
         </div>
 
         {/* Cards Section (with sticky and stacking behavior) */}
-        <div className="w-full lg:w-1/2 relative">
+        <div className="w-full lg:w-1/2  relative">
           <div className="space-y-8 ">
             <div className="sticky  top-10 z-30 mt-[100px] bg-gray-100 p-7 rounded-lg transform -rotate-2 hover:rotate-2 transition-transform duration-300 hover:scale-110">
               <Link to='/registration' className="text-3xl font-bold">Create an Account</Link>
