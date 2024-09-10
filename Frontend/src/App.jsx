@@ -8,6 +8,7 @@ import ContactUs from './components/ContactUs';
 import Complain from './components/Complain';
 import MyAccount from './components/MyAccount';
 import CourseNotes from './components/CourseNotes';
+import AppLayout from './components/AppLayout';
 
 const router = {
   home: '/',
@@ -23,7 +24,8 @@ const router = {
 const App = () => {
   return (
       <Routes>
-        <Route path='/'element={<Home />} />
+        <Route path='/' element={<AppLayout/>}>
+        <Route index element={<Home />} />
         <Route path='/not-found' element={<NotFound />} />
         <Route path={router.registration} element={<Registration />} />
         <Route path={router.login} element={<Login />} />
@@ -31,6 +33,7 @@ const App = () => {
         <Route path={router.Complain} element={<Complain />} />
         <Route path={router.MyAccount} element={<MyAccount />} />
         <Route path={router.CourseNotes} element={<CourseNotes />} />
+        </Route>
 
         {/* Add more routes here */}
         <Route path="*" element={<Navigate to={router.notFound} replace />} />

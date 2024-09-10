@@ -57,7 +57,6 @@ const ComplaintPage = () => {
     return (
         <div className="min-h-screen bg-gray-100">
             {/* NavBar Component */}
-            <NavBar />
 
             <div className="flex items-center justify-center p-6">
                 {!isLoggedIn ? (

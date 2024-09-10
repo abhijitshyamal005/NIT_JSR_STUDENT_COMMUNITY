@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom'; // Changed Link to NavLink
 import logo from '../assets/nit-jamshedpur.png';
 import Scholar from '../assets/Scholarship.png';
 import userProfilePic from '../assets/dev2.jpg'; // Your user profile image
@@ -33,21 +33,21 @@ function Navbar() {
   return (
     <header className="sticky top-0 w-full z-10 bg-white flex justify-center">
       <div className="w-full max-w-screen-xl flex items-center justify-between p-6">
-        <Link to='/'>
+        <NavLink to='/'>
           <img alt="logo" src={logo} className="h-12" />
-        </Link>
+        </NavLink>
 
         <div className="hidden md:flex flex-1 justify-between">
           <nav className="flex items-center space-x-8 ml-5 text-black font-semibold font-sans">
-            <a href="https://nitjsr.ac.in/" className="text-black hover:text-[#d15213]">
+            <NavLink to="https://nitjsr.ac.in/" className="text-black hover:text-[#d15213]">
               NIT JSR Official Website
-            </a>
-            <a href='/complain' className="text-black hover:text-[#d15213]">
+            </NavLink>
+            <NavLink to='/complain' className="text-black hover:text-[#d15213]">
               Report A Complain
-            </a>
-            <a href='/course-notes' target="_blank" rel="noreferrer noopener" className="text-black hover:text-[#d15213]">
+            </NavLink>
+            <NavLink to='/course-notes' className="text-black hover:text-[#d15213]">
               Course Notes
-            </a>
+            </NavLink>
             <div
               onClick={() => setDrop(!Drop)}
               className="relative flex items-center cursor-pointer"
@@ -70,12 +70,12 @@ function Navbar() {
           <div className="flex items-center space-x-8 font-semibold align-end">
             {!isLoggedIn ? (
               <>
-                <Link to='/registration' className="bg-[#d15213] text-white py-2 px-7 border-[2px] rounded-3xl border-[#d15213] hover:bg-black">
+                <NavLink to='/registration' className="bg-[#d15213] text-white py-2 px-7 border-[2px] rounded-3xl border-[#d15213] hover:bg-black">
                   Get Started
-                </Link>
-                <Link to='/login' className="border-[#d15213] border-[2px] py-2 px-7 text-[#d15213] rounded-3xl hover:bg-[#d15213] hover:text-white">
+                </NavLink>
+                <NavLink to='/login' className="border-[#d15213] border-[2px] py-2 px-7 text-[#d15213] rounded-3xl hover:bg-[#d15213] hover:text-white">
                   Login
-                </Link>
+                </NavLink>
               </>
             ) : (
               <div className="relative flex items-center space-x-2">
@@ -91,9 +91,9 @@ function Navbar() {
 
                 {profileMenuVisible && (
                   <div className="absolute right-0 top-full mt-2 bg-white shadow-lg rounded-lg w-48 border border-gray-200">
-                    <Link to="/my-account" className="block px-4 py-2 text-black hover:bg-gray-100">
+                    <NavLink to="/my-account" className="block px-4 py-2 text-black hover:bg-gray-100">
                       My Account
-                    </Link>
+                    </NavLink>
                     <button
                       onClick={handleLogout} // Handle logout on click
                       className="block px-4 py-2 text-black hover:bg-gray-100 w-full text-left"
@@ -112,12 +112,12 @@ function Navbar() {
           <div className="flex mr-3 space-x-2 text-[15px] font-semibold justify-center">
             {!isLoggedIn && (
               <>
-                <Link to='/registration' className="bg-[#d15213] text-white p-2 border rounded-2xl border-[#d15213] hover:bg-black">
+                <NavLink to='/registration' className="bg-[#d15213] text-white p-2 border rounded-2xl border-[#d15213] hover:bg-black">
                   Get Started
-                </Link>
-                <Link to='/login' className="border-[#d15213] border p-2 text-[#d15213] rounded-2xl hover:bg-[#d15213] hover:text-white">
+                </NavLink>
+                <NavLink to='/login' className="border-[#d15213] border p-2 text-[#d15213] rounded-2xl hover:bg-[#d15213] hover:text-white">
                   Login
-                </Link>
+                </NavLink>
               </>
             )}
           </div>
@@ -150,10 +150,10 @@ function Navbar() {
             )}
             {/* Display profile image and notification icon if logged in */}
             {isLoggedIn && mobileProfileMenuVisible && (
-              <div className="absolute   left-5 bg-white shadow-lg rounded-lg w-48 border border-gray-200">
-                <Link to="/my-account" className="block px-4 py-2 text-black hover:bg-gray-100">
+              <div className="absolute left-5 bg-white shadow-lg rounded-lg w-48 border border-gray-200">
+                <NavLink to="/my-account" className="block px-4 py-2 text-black hover:bg-gray-100">
                   My Account
-                </Link>
+                </NavLink>
                 <button
                   onClick={handleLogout} // Handle logout on click
                   className="block px-4 py-2 text-black hover:bg-gray-100 w-full text-left"
@@ -164,72 +164,29 @@ function Navbar() {
             )}
             <ul className="flex flex-col space-y-4 px-6 font-semibold hover:text-[#d15213]">
               <li>
-                <a href="/" className="text-black hover:text-[#d15213]">
+                <NavLink to="/" className="text-black hover:text-[#d15213]">
                   NIT JSR Official Website
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href='/complain' className="text-black hover:text-[#d15213]">
+                <NavLink to='/complain' className="text-black hover:text-[#d15213]">
                   Report A Complain
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href='/course-notes' target="_blank" rel="noreferrer noopener" className="text-black hover:text-[#d15213]">
+                <NavLink to='/course-notes' className="text-black hover:text-[#d15213]">
                   Course Notes
-                </a>
+                </NavLink>
               </li>
               <li>
-                <div
-                  onClick={() => setMobileMenuVisible(!mobileMenuVisible)}
-                  className="relative flex items-center cursor-pointer"
-                >
-                  <span className="text-black hover:text-[#d15213]">Others</span>
-                  <div className="ml-2">
-                    {mobileMenuVisible ? (
-                      <svg viewBox="0 0 1024 1024" className="w-6 h-6 transform rotate-180">
-                        <path d="M298 426h428l-214 214z"></path>
-                      </svg>
-                    ) : (
-                      <svg viewBox="0 0 1024 1024" className="w-6 h-6">
-                        <path d="M426 726v-428l214 214z"></path>
-                      </svg>
-                    )}
-                  </div>
-                </div>
+                <NavLink to='/others' className="text-black hover:text-[#d15213]">
+                  Others
+                </NavLink>
               </li>
             </ul>
-
-            {/* Accordion for Others */}
-            {mobileMenuVisible && (
-              <div className="bg-gray-100 mt-4 px-6 py-">
-                <ul className="space-y-2">
-                  <li>
-                    <a href="" className="text-black hover:text-[#d15213]">
-                      Scholarship
-                    </a>
-                  </li>
-                  <li>
-                    <a href="" className="text-black hover:text-[#d15213]">
-                      Report Lost Item
-                    </a>
-                  </li>
-                  <li>
-                    <a href="" className="text-black hover:text-[#d15213]">
-                      Found Items
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/contact-us" className="text-black hover:text-[#d15213]">
-                      Contact
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            )}
           </nav>
         )}
-
-        {Drop && (
+            {Drop && (
           <div className="absolute top-full left-0 w-full bg-white shadow-lg py-4">
             <div className="max-w-screen-xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 px-6">
               <a href="/not-found" className="flex items-center space-x-4">

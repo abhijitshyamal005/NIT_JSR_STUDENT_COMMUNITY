@@ -59,7 +59,6 @@ const CourseNotes = () => {
 
   return (
     <>
-      <Navbar />
       <div className="p-6 max-w-screen-lg mx-auto">
         <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center">Course Notes</h2>
 

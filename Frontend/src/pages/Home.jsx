@@ -13,7 +13,6 @@ import ContactUs from "../components/ContactUs"
 function Home() {
   return (
     <>
-    <Navbar/>
     <Hero1/>
     <Features1/>
     <Banner1/>
@@ -21,7 +20,6 @@ function Home() {
     <About/>
     <Testimonial/>
     <ContactUs/>
-    <Footer/>
     </>
   )
 }
