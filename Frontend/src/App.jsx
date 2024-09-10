@@ -1,6 +1,6 @@
 import { Routes, Route, Navigate } from 'react-router-dom'
-import Home from './pages/Home'
-import NotFound from './pages/NotFound'
+import Home from './components/pages/Home.jsx'
+import NotFound from './components/pages/NotFound.jsx'
 import './App';
 import Registration from './components/Registration';
 import Login from './components/Login';

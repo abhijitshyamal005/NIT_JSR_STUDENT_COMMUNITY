@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Navbar from './Navbar';
 import userProfilePic from '../assets/dev2.jpg'; // Your user profile image
 
 const Dashboard = () => {
@@ -7,7 +6,7 @@ const Dashboard = () => {
 
   return (
     <>
-      <Navbar />
+      
       <div className="h-screen flex flex-col md:flex-row overflow-x-hidden">
         
         {/* Sidebar Toggle Button for Mobile */}

@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import NavBar from './Navbar.jsx'; // Import the NavBar component
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const ComplaintPage = () => {
+    const navigate = useNavigate(); // Initialize the useNavigate hook
     const [isLoggedIn] = useState(true); // Set to true for testing, you can handle this with real login state.
     const [studentDetails, setStudentDetails] = useState({
         name: '',
@@ -52,6 +52,7 @@ const ComplaintPage = () => {
     // Function to close the success popup
     const handleSuccessPopupClose = () => {
         setShowSuccessPopup(false);
+        navigate('/');
     };
 
     return (

@@ -1,6 +1,6 @@
 
 import { Helmet } from 'react-helmet'
-import logo from '../assets/nit-jamshedpur.png'
+import logo from '../../assets/nit-jamshedpur.png'
 
 const NotFound = () => {
   return (
